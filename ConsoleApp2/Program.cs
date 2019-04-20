@@ -86,11 +86,11 @@ namespace ConsoleApp2
 			history.Add(message.Id, message.Content);
 
 			if (message.Content.StartsWith("!help")) {
-				await message.Channel.SendMessageAsync("HEY! DONT BULLY FRISK");
+				await message.Channel.SendMessageAsync("Do you need frisk bullying advice? Please contact Christian II of Denmark.");
 			}
 
 			if (message.Content.StartsWith("!clown")) {
-				await message.Channel.SendMessageAsync("If frisk is the clown wolf does that make me a clown bot? :(");
+				await message.Channel.SendMessageAsync("Frisk is a clown");
 			}
 
 			if (message.Content.StartsWith("!calc")) {
@@ -111,7 +111,7 @@ namespace ConsoleApp2
 				await message.Channel.SendMessageAsync(System.Globalization.CultureInfo.InvariantCulture.Calendar.GetWeekOfYear(DateTime.Now, CalendarWeekRule.FirstFourDayWeek, DayOfWeek.Monday).ToString());
 
 			if (message.Content == "!ping")
-				await message.Channel.SendMessageAsync("pong!");
+				await message.Channel.SendMessageAsync("Frisk loves men.");
 		}
 	}
 }
